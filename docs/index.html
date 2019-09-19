@@ -6,63 +6,97 @@
 	<title>Advogrand</title>
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
 	<script src="https://kit.fontawesome.com/c51b61aca4.js"></script>
 </head>
 <body>
 <header id="main_page">
+	<div class="header_top">
 		<div class="container">
 			<div class="row">	
-				<div class="col-md-2">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4	 col-4">
 					<span class="t_phone_number">
 						+7 499 322-85-80
 					</span>
 				</div>
-				<div class="col-md-8">
+				<div class="col-lg-8 col-md-7 col-sm-6 col-xs-6 col-6">
+					<div class="md_adapt">
+						<button type="submit">Перезвоните мне</button>
+					</div>
 						<ul class="nav_menu">
-							<li><a href="#">
+							<li><a href="#main_page">
 								Главная 
 							</a></li>
-							<li><a href="#">
+							<li><a href="#service">
 								О сервисе
 							</a></li>
-							<li><a href="#">
+							<li><a href="#advantages">
 								Преимущества
 							</a></li>
-							<li><a href="#">
-								Отзывы
+							<li><a href="#partners">
+								Партнеры
 							</a></li>
-							<li><a href="#">
+							<li><a href="#plans">
 								Тарифы
 							</a></li>
-							<li><a href="#">
+							<li><a href="#contacts">
 								Контакты
 							</a></li>
 						</ul>				
 				</div>
-				<div class="col-md-2">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+					<div class="m-menu-link">
+					<a href="#">
+                      	<i class="fas fa-bars"></i>
+                    </a>						
+					</div>
+
+                    <ul class="m-menu">
+    				<i class="fas fa-times close-menu"></i>
+							<li><a href="#main_page">
+								Главная 
+							</a></li>
+							<li><a href="#service">
+								О сервисе
+							</a></li>
+							<li><a href="#advantages">
+								Преимущества
+							</a></li>
+							<li><a href="#partners">
+								Партнеры
+							</a></li>
+							<li><a href="#plans">
+								Тарифы
+							</a></li>
+							<li><a href="#contacts">
+								Контакты
+							</a></li>
+					</ul>
 					<div class="call_button">
 						<button type="submit">Перезвоните мне</button>
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
+
+	</div>		
 	<div class="header_center">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
 					<div class="header_logo">
-						<img src="img/header_logo.png" alt="header_logo">
+						<img src="img/header_logo.jpg" alt="header_logo">
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 col-6">
 					<div class="header_article">
 						<h5 class="header_article__title">
 							Ваш личный юрист всегда на связи
 						</h5>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-4">
 					<div class="header_contacts">
 						<span class="header_contacts__number">
 						+7 499 322-85-80
@@ -105,121 +139,530 @@
 		</div>
 	</div>
 </header>
-<section class="service">
+<section class="question">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="service_title">
-					Услуги предоставляемые сервисом Advogrand
+				<h2 class="question_title">
+					Как оказывается услуга
 				</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image">
-						<img src="img/professor-consultation.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Устные<br>
-						консультации
-					</span>
+				<div class="question_info">	
+                   <div class="question_info__image">	
+						<img src="img/q_icon_1.png" alt="q">
+                   </div>
+                   <p class="question_info__text">
+                   	Появился вопрос –<br> 
+					звоните по бесплатному номеру
+                   </p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image">
-						<img src="img/phone-call_(3).jpg" alt="">
-					</div>
-					<span class="service_info__title">
-						Звонок<br>
-						юриста
-					</span>
+				<div class="question_info">	
+                   <div class="question_info__image">	
+						<img src="img/q_icon_2.png" alt="q">
+                   </div>
+                   <p class="question_info__text">
+                   	Описываете ситуацию –<br>
+					получаете ответ в течении 15 минут
+                   </p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/file_(1).jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Модели<br>
-						договора
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/tactics.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Устные<br>
-						бизнес-консультации
-					</span>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/work-communication.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Содействие<br> 
-						в переговорах
-					</span>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/law-book_(1).jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Обзор изменений<br> 
-						в законодательстве
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/exam.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Письменные<br>
-						консультации
-					</span>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/lawyer.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Консультации<br>
-						в отношении третьих лиц
-					</span>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service_info">
-					<div class="service_info__image cc">
-						<img src="img/balance.jpg" alt="">
-					</div>
-					<span class="service_info__title center">
-						Все области<br>
-						права
-					</span>
+				<div class="question_info">	
+                   <div class="question_info__image">	
+						<img src="img/q_icon_3.png" alt="q">
+                   </div>
+                   <p class="question_info__text bold">
+                   	Ваш вопрос решен!<br>
+                   	<br>
+                   </p>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>				
+</section>
+<section class="about" id="service">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="about_title">
+					О сервисе Advogrand
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p class="about_text">
+					В составе нашей команды трудятся профессионалы, имеющие огромный опыт реальной юридической практики.<br>Благодаря этому мы всегда можем найти юридически верное решение, защищающее интересы, сглаживающее<br>конфликтные ситуации.
+				</p>
+				<p class="about_text">
+					Наше абонентское обслуживание позволяет сохранить нашим клиентам время, деньги и душевное спокойствие,<br>
+					ведь ваши интересы находятся под круглосуточной защитой «личного адвоката»
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+				<div class="about_stat">
+					<div data-num="9" class="about_stat__number">
+						0
+					</div>
+					<p class="about_stat__text">
+						лет на российском<br>
+						рынке
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+				<div class="about_stat">
+					<div data-num="289" class="about_stat__number">
+						0
+					</div>
+					<p class="about_stat__text">
+						квалифицированных<br>
+						специалистов
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+				<div class="about_stat">
+					<div data-num="400" class="about_stat__number">
+						0
+					</div>
+					<p class="about_stat__text">
+						решенных вопросов
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+				<div class="about_stat">
+					<div data-num="3" class="about_stat__number">
+						0
+					</div>
+					<p class="about_stat__text">
+						работаем<br>
+						в 3-х странах мира
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+<section class="advantages" id="advantages">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="advantages_title">
+					Преимущество сервиса Advogrand<br>
+ 					по сравнению с другими юридическими компаниями
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="advantages_text">
+					<p>Одна консультация</p>
+					<p>Дополнительные услуги</p>
+					<p>Решение вопроса</p>
+					<p>Время работы</p>
+					<p>Оплата</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<div class="advantages_item active">
+					<h6 class="advantages_item__title">
+						Advogrand
+					</h6>
+                    <p>От 120 руб</p>
+                    <p>Входят в абонемент</p>
+                    <p>По телефону</p>
+                    <p>Круглосуточно</p>
+                    <p>Всего 1 раз в год</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4">
+				<div class="advantages_item">
+					<h6 class="advantages_item__title">
+						Юридические компании
+					</h6>
+                    <p>Более 1000 руб</p>
+                    <p>Оплачиваются отдельно</p>
+                    <p>В офисе</p>
+                    <p>С 9:00 до 18:00</p>
+                    <p>Каждый раз  при обращении</p>                    
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="advantages_recom">
+					<h6 class="advantages_recom__title">
+						Нашими услугами уже пользуются:
+					</h6>
+					<div class="recom_item">
+						<div class="recom_item__image">
+							<img src="img/1.jpg" alt="">
+						</div>
+						<span class="recom_item__text">
+							<b>208 000</b> - мужчин
+						</span>
+					</div>
+					<div class="recom_item">
+						<div class="recom_item__image">
+							<img src="img/2.jpg" alt="">
+						</div>
+						<span class="recom_item__text">
+							<b>137 000</b> - женщин
+						</span>
+					</div>
+					<div class="recom_item">
+						<div class="recom_item__image">
+							<img src="img/3.jpg" alt="">
+						</div>
+						<span class="recom_item__text">
+							<b>63 000</b> - семейных пар
+						</span>
+					</div>
+					<div class="recom_item">
+						<div class="recom_item__image">
+							<img src="img/4.jpg" alt="">
+						</div>
+						<span class="recom_item__text">
+							<b>13 500</b> - предпринимателей
+						</span>
+					</div>
+					<div class="recom_button">
+					<button type="button">Узнать больше!</button>							
+					</div>
+			
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="consultation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-9 col-sm-12">
+				<div class="consultation_info">
+					<h3 class="consultation_info__title">
+						Хотите получить бесплатную<br>
+						юридическую консультацию?
+					</h3>
+					<ol>
+						<li>Скачайте наше приложение Reworld для iOS или Android</li>
+						<li>Посмотрите один из 150  познавательных видеороликов.</li>
+						<li>Введите Ваш номер телефона и с Вами свяжется юрист<br>
+						для консультации
+					    </li>
+					</ol>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-3 col-slg12 col-md-6">
+				<div class="consultation_image">
+					<img src="img/Android-app-store.png" alt="">
+				</div>
+				<div class="consultation_image">
+					<img src="img/iOS-app-store.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="partners" id="partners">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h3 class="partners_title">
+				Партнеры Advogrand
+				</h3>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="partner_slider">
+					<div class="partner_item">
+						<img src="img/21.jpg" alt="">
+					</div>
+					<div class="partner_item">
+						<img src="img/Spartak_Moscow_1949-97.jpg" alt="">
+					</div>
+					<div class="partner_item">
+						<img src="img/nationalnay-strahovay-gruppa.jpg" alt="">
+					</div>
+					<div class="partner_item">
+						<img src="img/0_f0780_a878a2d7_orig.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="plans" id="plans">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12">
+				<div class="plans_article">
+					<h3 class="plans_article__title">
+						Выберите тариф
+					</h3>
+					<p class="plans_article__text">
+						Вы можете оформить карту и начать пользоваться услугами уже сейчас!<br>
+						Оформление займёт всего 10 минут
+					</p>
+					<p class="plans_article__under_title">
+						Выберите годовую карту, которая Вам подходит:
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="plans_review">
+					<a href="#">Сравнить тарифы</a>
+					<button type="button" class="plans_review__button">тарифы</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="plans_item">
+					<h4 class="plans_item__title">
+						Персональная карта<br>
+						<b>для Вас</b>
+					</h4>
+					<div class="plans_item__image">
+						<img src="img/personal-standard-1.jpg" alt="">
+					</div>
+					<div class="plans_item__text">
+						<p>Устные консультации</p>
+						<span>2 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Консультации в отношении 3-х лиц</p>
+						<span>2 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Письменные консультации</p>
+						<span>2 в квартал</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Звонок юриста</p>
+						<span>1 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Содействие в переговорах</p>
+						<span>1 в месяц</span>
+				    </div>
+				    <h6 class="plans_item__title_price">
+				    	Цена:
+				    </h6>
+				    <span class="plans_item__price">
+				    	35 $ за год
+				    </span><br>
+				    <a href="#">
+				    <button type="button" class="plans_item__consul first">
+				    	Консультация
+				    </button>				    	
+				    </a><br>
+					<a href="#">
+				    <button type="button" class="plans_item__buy">
+				    	Купить
+				    </button>				    	
+				    </a>
+
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="plans_item">
+					<h4 class="plans_item__title">
+						Карта<br>
+						<b>для всей семьи</b>
+					</h4>
+					<div class="plans_item__image">
+						<img src="img/family-standard-1.jpg" alt="">
+					</div>
+					<div class="plans_item__text">
+						<p>Устные консультации</p>
+						<span>2 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Консультации в отношении 3-х лиц</p>
+						<span>2 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Письменные консультации</p>
+						<span>2 в квартал</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Звонок юриста</p>
+						<span>1 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Содействие в переговорах</p>
+						<span>1 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Сервис для всей семьи</p>
+						<span></span>
+				    </div>
+				    <h6 class="plans_item__title_price">
+				    	Цена:
+				    </h6>
+				    <span class="plans_item__price">
+				    	45 $ за год
+				    </span><br>
+				    <a href="#">
+				    <button type="button" class="plans_item__consul second">
+				     	Консультация
+				    </button>
+				    </a><br>
+					<a href="#">
+					<button type="button" class="plans_item__buy">
+				    	Купить
+				    </button>						
+					</a>
+
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="plans_item">
+					<h4 class="plans_item__title">
+						Карта<br>
+						<b>для бизнеса</b>
+					</h4>
+					<div class="plans_item__image">
+						<img src="img/business-standard-1.jpg" alt="">
+					</div>
+					<div class="plans_item__text">
+						<p>Устные консультации</p>
+						<span>2 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Консультации в отношении 3-х лиц</p>
+						<span>2 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Письменные консультации</p>
+						<span>2 в квартал</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Звонок юриста</p>
+						<span>1 в год</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Содействие в переговорах</p>
+						<span>1 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Бизнес-косультации</p>
+						<span>2 в месяц</span>
+				    </div>
+				    <div class="plans_item__text">
+						<p>Рекомендуемая модель договора</p>
+						<span></span>
+				    </div>
+				    <h6 class="plans_item__title_price">
+				    	Цена:
+				    </h6>
+				    <span class="plans_item__price">
+				    	65 $ за год
+				    </span><br>
+				    <a href="#">
+				    <button type="button" class="plans_item__consul third">
+				    	Консультация
+				    </button>				    	
+				    </a><br>
+					<a href="#">
+					<button type="button" class="plans_item__buy">
+				    	Купить
+				    </button>						
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts" id="contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="contact_form">
+					<h5 class="contact_form__title">
+						Напишите нам письмо или задайте<br>
+						свой вопрос
+					</h5>
+					<span class="contact_form__text">Введите своё имя</span>
+					<input type="text" class="contact_form__input">
+                    <span class="contact_form__text">Ваш номер телефона</span>
+                    <input type="text" class="contact_form__input">
+                    <span class="contact_form__text">Сообщение или вопрос</span>
+                    <input type="text" class="contact_form__input">
+                    <button type="button" class="contact_form__button">
+                    	Заказать звонок консультанта
+                    </button>
+                    <span class="contact_form__end_text">
+                    Перезвоним вам в течении 5 минут
+                    </span>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="contact_info">
+					<h2 class="contact_info__title">
+						Контакты
+					</h2>
+					<p class="contact_info__text_numb">
+						Телефон для покупки карт:
+					</p>
+					<span class="contact_info__phone_numb">
+						+7 499 322-85-80
+					</span>
+					<p class="contact_info__text_mail">
+						Email:
+					</p>
+					<a href="#" class="contact_info__address_mail">
+						info@advogrand.net
+					</a>
+					<p class="contact_info__time_title">
+						Время работы:
+					</p>
+					<p class="contact_info__time_table">
+						С понедельника по пятницу:<br> 
+						9:00 — 22:00<br>
+				    </p>
+				    <p class="contact_info__time_table">
+						В праздничные и выходные дни:<br>
+						только телефонные консультации<br>
+						10:00 — 20:00
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="footer_page">
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<div class="footer_logo">
+					<img src="img/footer_logo.png" alt="footer_logo">
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="footer_info">
+					<p class="footer_info__text">
+						&copy; Advogrand 2019
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/main.js"></script>		
 </body>
 </html>
