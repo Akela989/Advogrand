@@ -1,0 +1,109 @@
+@import './_mixins/breakpoints'
+@import './interface'
+
+
++lg-block()
+	.t_phone_number
+		font-size: 15px
+	.call_button button 
+		padding: 10px 10px
+	.header_contacts
+		&__number
+		   font-size: 15px
+		   margin-right: 10px
+
+
++md-block()
+	.header_logo img
+		max-width: 100%
+		height: auto 
+	.nav_menu
+		display: none
+	.call_button
+		display: none 
+	.t_phone_number
+		font-size: 17px
+	.md_adapt
+		display: flex
+	.m-menu-link
+		display: flex
+		justify-content: flex-end 
+		height: 100%
+		align-items: center
+	.about_text
+		letter-spacing: 0
+		font-size: 13px	
+	.advantages_text
+		display: none 
+	.consultation_info ol li 
+		font-size: 16px
+
+
++sm-block()
+	.header_contacts
+		display: none 
+	.header_article
+		&__title
+		   font-size: 15px
+		   text-align: right
+	.about_text
+		font-size: 16px 
+	.advantages_item
+		padding: 40px 0 20px 0
+		&__title
+		   font-size: 16px
+		& p
+		   font-size: 15px
+	.advantages_recom
+		display: flex 
+		flex-direction: column 
+		align-items: center 
+	.consultation_image
+		display: flex 
+		justify-content: center 
+	.consultation_info
+		&__title
+		   text-align: center 
+	.plans_article
+		text-align: center
+		&__text
+		   font-size: 14px
+	.plans_review
+		margin-top: 20px
+		justify-content: center 
+	.contact_form
+		align-items: center
+		text-align: center 
+	.contact_info 
+		margin-top: 30px
+		text-align: center
+		&__text_numb,
+		&__text_mail,
+		&__time_title
+		   margin: 10px 0 0 0	
+
+
++xs-block()
+	.t_phone_number
+		font-size: 14px	
+	.header_info
+		&__title
+		   font-size: 28px
+	.advantages_title
+		font-size: 25px
+	.consultation_info
+		&__title
+		   font-size: 25px
+	.plans_article
+		&__text
+		   font-size: 17px
+	.contact_form
+		align-items: center
+		text-align: center 
+	.contact_info 
+		margin-top: 30px
+		text-align: center
+		&__text_numb,
+		&__text_mail,
+		&__time_title
+		   margin: 10px 0 0 0		 

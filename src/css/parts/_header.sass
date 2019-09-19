@@ -1,7 +1,23 @@
 @import './interface'
 
+.header_top_fixed
+	top: 0
+	z-index: 100
+	padding: 10px 0
+	position: fixed 
+	width: 100%
+	background-color: #f4f4f4
+	border-bottom: 1px solid $text_color
+	animation-name: show_top-side
+	animation-duration: 0.6s
 
-
+@keyframes show_top-side
+    0%
+      opacity: 0
+      top: -70px
+    100%
+      opacity: 0.5
+      top: 0
 
 .header_top
 	border-bottom: 1px solid #f4f4f4 	
@@ -38,7 +54,7 @@
 .call_button
 	display: flex 
 	justify-content: flex-end
-	margin: 10px 0
+	padding: 10px 0
 
 .call_button button 
 	border: none 
@@ -55,6 +71,7 @@
 .header_center
 	margin: 20px 0
 
+
 .header_article
 	display: flex 
 	justify-content: center 
@@ -67,7 +84,6 @@
 	   letter-spacing: 0.14px
 	   color: $text_color
 	   margin: 0
-
 
 .header_contacts
 	display: flex 
@@ -104,7 +120,7 @@
 
 
 .header_bottom
-	background: url("../../img/header_bg.png") no-repeat center 
+	background: url("../../img/header_bg.jpg") no-repeat center 
 	background-size: cover
 	height: 100%
 	padding: 24vh 0
@@ -135,6 +151,71 @@
 	   color: #ffffff
 
 
+.md_adapt
+	display: none
+	justify-content: center
+	margin: 10px 0
+
+.md_adapt button 
+	border: none 
+	border-radius: 5px
+	background-color: #c91111
+	font-family: $p_bold
+	font-weight: 700
+	font-size: 12px
+	color: #ffffff
+	padding: 10px 20px   
+
+
+.m-menu-link
+  	display: none
+
+
+.m-menu-link a
+  	color: #333
+  	font-size: 32px
+  	text-decoration: none 
+  	&:hover 
+  	  text-decoration: none 
+  	  color: #333
+
+.m-menu
+	top: 0
+	right: 0
+	position: fixed
+	display: flex
+	flex-direction: column 
+	align-items: flex-end
+	padding-right: 20px
+	line-height: 30px
+	border-radius: 10px
+	background-color: $bg_color
+	border: 1px solid $text_color
+	transform: translateX(101%)
+	transition: 0.8s
+	z-index: 200
+	& li 
+	  padding: 5px 0
+	  list-style: none 	
+	& a
+	  text-decoration: none 
+	  color: $text_color
+	  font-family: $p_reg
+	  font-weight: 400
+	  font-size: 16px
+	  letter-spacing: 0.14px
+	& a:hover
+	  text-decoration: none 
+	  color: #c91111
+
+
+.m-menu_active
+  transform: translateX(0%)
+  z-index: 200
 
 
 
+.fa-times
+  font-size: 20px
+  cursor: pointer 
+  padding-bottom: 15px
